@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aman.agrawal.bunnysdiary.Extras.UserProfile"
+    android:padding="10dp"
+    android:background="@drawable/back">
+
+
+    <ImageView
+        android:id="@+id/iv_userProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorSignUpText"
+        app:srcCompat="@drawable/image2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/iv_userProfilePic"
+
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            />
+
+        <ImageButton
+            android:id="@+id/ibtn_editUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_mode_edit_black_24dp"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btn_changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_userEmail"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btndesign"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:text="Change Password"/>
+
+    <Button
+        android:id="@+id/btn_signOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_changePassword"
+        android:background="@drawable/btndesign"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:text="SIGN OUT"/>
+
+    <Button
+        android:id="@+id/btn_deleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_changePassword"
+        android:layout_alignEnd="@+id/btn_changePassword"
+        android:layout_below="@+id/btn_signOut"
+        android:layout_marginTop="10dp"
+        android:text="Delete Account"
+        android:background="#e20606"/>
+
+
+</RelativeLayout>

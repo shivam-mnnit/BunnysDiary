@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="aman.agrawal.bunnysdiary.Utilities.CheckListActivity"
+    android:background="#f7c8a3">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_addchecklist"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="What else to keep in mind?"/>
+
+    <Button
+        android:id="@+id/bt_addchecklist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_addchecklist"
+        android:layout_alignEnd="@+id/et_addchecklist"
+        android:layout_below="@+id/et_addchecklist"
+        android:layout_margin="10dp"
+        android:background="@drawable/btndesign"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="ADD" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/bt_addchecklist"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:id="@+id/linearlayoutchecklist">
+
+        <CheckBox
+            android:id="@+id/chk_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Wallet"
+            />
+        <CheckBox
+            android:id="@+id/chk_Mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Mobile"
+            />
+        <CheckBox
+            android:id="@+id/chk_Tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Tickets"
+            />
+        <CheckBox
+            android:id="@+id/chk_Food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Food"/>
+    </LinearLayout>
+
+</RelativeLayout>

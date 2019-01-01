@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "276101308878",
+    "firebase_url": "https://bunnysdiary-1c982.firebaseio.com",
+    "project_id": "bunnysdiary-1c982",
+    "storage_bucket": "bunnysdiary-1c982.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276101308878:android:3b3dca8dbd0bca2f",
+        "android_client_info": {
+          "package_name": "aman.agrawal.bunnysdiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276101308878-ub1qo7meg02q7mn5v6htctjug4t5odmn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "aman.agrawal.bunnysdiary",
+            "certificate_hash": "7e3c9bff8a5a1033671f69071e6ed8863063369c"
+          }
+        },
+        {
+          "client_id": "276101308878-fvtg643otsjt1im6qig6s48rpbaoip28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxOghoJXl1_bsIhJrz22wtVosL6CzHaqk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276101308878-fvtg643otsjt1im6qig6s48rpbaoip28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

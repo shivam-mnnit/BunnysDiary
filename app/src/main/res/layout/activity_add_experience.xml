@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aman.agrawal.bunnysdiary.Trips.AddExperience"
+    android:background="@drawable/back">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_addCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Enter City Name" />
+
+            <LinearLayout
+                android:id="@+id/lineralayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/et_addCity">
+
+                <EditText
+                    android:id="@+id/et_addDateFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_below="@+id/et_addCity"
+                    android:layout_marginTop="15dp"
+                    android:hint="Trip Started On"
+                    android:clickable="true"
+                    android:focusable="false"
+                    />
+
+                <EditText
+                    android:id="@+id/et_addDateTo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_below="@+id/et_addCity"
+                    android:layout_marginTop="15dp"
+                    android:hint="Trip Ended On"
+                    android:clickable="true"
+                    android:focusable="false"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_addPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lineralayout"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/btndesign"
+                android:textColor="#ffffff"
+                android:text="Add Photos" />
+
+            <Button
+                android:id="@+id/btn_addExpenses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/btn_addPhotos"
+                android:layout_margin="20dp"
+                android:text="Add Expenses"
+                android:background="@drawable/btndesign"
+                android:textColor="#ffffff"/>
+
+            <EditText
+                android:id="@+id/et_addExpenses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_addExpenses"
+                android:layout_alignStart="@+id/btn_addExpenses"
+                android:layout_alignEnd="@+id/btn_addExpenses"
+                android:hint="Rs. "
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/btn_addExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_addExpenses"
+                android:layout_margin="20dp"
+                android:text="Add Experience"
+                android:background="@drawable/btndesign"
+                android:textColor="#ffffff"/>
+
+            <EditText
+                android:id="@+id/et_addExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_addExperience"
+                android:layout_alignStart="@+id/btn_addExperience"
+                android:layout_alignEnd="@+id/btn_addExperience"
+                android:hint="So, How was your Experience?"/>
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/pb_uploading"-->
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/et_addExperience"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_addExperience"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btndesign"
+                android:textColor="#ffffff"
+                android:layout_marginTop="30dp"
+                android:text="Add" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

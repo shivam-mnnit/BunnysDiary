@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="aman.agrawal.bunnysdiary.Extras.DevelopersActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".7">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/developers"
+            android:textSize="23sp"
+            android:textColor="#660066"
+            android:layout_centerInParent="true"
+            android:textStyle="bold|italic"
+            android:background="@drawable/back"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".3"
+        android:background="@drawable/back">
+        <!--android:background="@drawable/developers">-->
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/aman"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="@string/aman"
+            />
+
+        <TextView
+            android:id="@+id/shivam"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="@string/shivam"
+            android:layout_below="@+id/aman"
+            />
+
+        <TextView
+            android:id="@+id/aayush"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="@string/aayush"
+            android:layout_below="@+id/shivam"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Bunny\'sDiary</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="google_place_key">AIzaSyApACWTazPBy2QwaMBska5T4L39RGtHdPY</string>
+    <string name="open_weather_map_key">cbfdb21fa1793c10b14b6b6d00fbef03</string>
+    <string name="title_activity_bucket_list">BucketList</string>
+
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Got It!</string>
+
+    <string name="title_slide1">Getting Started</string>
+    <string name="desc_slide1">Twenty years from now you will be more disappointed by the things that you didn’t do than by the
+        ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails.
+        Explore. Dream. Discover.</string>
+
+    <string name="title_slide2">Know your next Stop!</string>
+    <string name="desc_slide2">Know about any City with just a single Click. Locate cities and locate yourself. Search for
+                                any palce and pack your bag.</string>
+
+    <string name="title_slide3">That is not all!!</string>
+    <string name="desc_slide3">Save your past Memories, Plan new Trips and wish for more. Share experiences with your friends and
+                                    invite them for more!!</string>
+
+    <string name="desc_slide4">“Traveling – it leaves you speechless, then turns you into a storyteller.” – Ibn Battuta</string>
+
+    <string name="developers">Bunny\'s Diary is the combined effort of following three 3rd year students of MNNIT, Allahabad.
+                                Hope you are liking this Android Project.For any Query feel free to contact. </string>
+
+
+    <string name="aman"><b>AMAN KUMAR AGRAWAL</b>\n
+                                    <b>CSE Student</b>\n
+                                    <b>MNNIT, Allahabad</b>\n
+                                    <a href="https://www.linkedin.com/in/aman-kumar-agrawal/">LinkedIn Profile</a>
+    </string>
+
+    <string name="shivam"><b>SHIVAM AGRAWAL</b>\n
+                                    <b>CSE Student</b>\n
+                                    <b>MNNIT, Allahabad</b>\n
+                                    <a href="https://www.linkedin.com/in/shivam-agrawal-212b24140/">LinkedIn Profile</a>
+    </string>
+
+    <string name="aayush"><b>AAYUSH CHAUHAN</b>\n
+                                    <b>IT Student</b>\n
+                                    <b>MNNIT, Allahabad</b>\n
+                                    <a href="https://www.linkedin.com/in/aayush-chauhan-007/">LinkedIn Profile</a>
+    </string>
+</resources>

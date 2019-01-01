@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aman.agrawal.bunnysdiary.MainActivity"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#4aa2bf"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:layout_weight="3">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_searchCity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text_style"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:hint="Search For A Place..." />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/voiceSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/td0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_below="@+id/btn_currentLocation"
+                android:text="Popular Indian Cities"
+                android:textColor="#000000"
+                android:textStyle="italic|bold"
+                android:layout_margin="5dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_currentLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/et_searchCity"
+                android:text="Search My Current Location"
+                android:textColor="#ffffff"
+                android:background="@drawable/btndesign"/>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="10dp"
+            android:id="@+id/main_grid"
+            >
+            <!--row 1 -->
+            <!--column1-->
+            <android.support.v7.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/cd1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/img1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/img1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="3dp"
+                        android:layout_below="@+id/img1"
+                        android:text="Delhi"
+                        android:textAlignment="center"
+                        android:id="@+id/td1"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="italic|bold" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--column2-->
+            <android.support.v7.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/cd2"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/img2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/img2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="3dp"
+                        android:layout_below="@+id/img2"
+                        android:text="Mumbai"
+                        android:textAlignment="center"
+                        android:id="@+id/td2"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="italic|bold" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--row2-->
+            <!--column1-->
+            <android.support.v7.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/cd3"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/img3"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="3dp"
+                        android:layout_below="@+id/img3"
+                        android:text="Kolkata"
+                        android:textAlignment="center"
+                        android:id="@+id/td3"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="italic|bold" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--column2-->
+            <android.support.v7.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/cd4"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/img4"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/img4"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="3dp"
+                        android:layout_below="@+id/img4"
+                        android:text="Bengaluru"
+                        android:textAlignment="center"
+                        android:id="@+id/td4"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="italic|bold"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/cd5"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/img5"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="3dp"
+                        android:layout_below="@+id/img5"
+                        android:text="Ahmedabad"
+                        android:textAlignment="center"
+                        android:id="@+id/td5"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="italic|bold" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--column2-->
+            <android.support.v7.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/cd6"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/img6"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/img6"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="3dp"
+                        android:layout_below="@+id/img6"
+                        android:text="Chennai"
+                        android:textAlignment="center"
+                        android:id="@+id/td6"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="italic|bold" />
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</GridLayout>

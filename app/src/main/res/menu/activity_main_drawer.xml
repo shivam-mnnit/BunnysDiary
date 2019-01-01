@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_myTrips"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="My Trips" />
+        <item
+            android:id="@+id/nav_bucketList"
+            android:icon="@drawable/ic_shopping_basket_black_24dp"
+            android:title="My Bucket List" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_my_location_black_24dp"
+            android:title="My Current Location" />
+
+        <item
+            android:id="@+id/nav_planATrip"
+            android:icon="@drawable/ic_fiber_new_black_24dp"
+            android:title="Plan A New Trip" />
+
+        <item
+            android:id="@+id/nav_upcomingTrips"
+            android:icon="@drawable/ic_insert_emoticon_black_24dp"
+            android:title="Upcoming Trips" />
+
+    </group>
+
+    <item android:title="Utilites">
+        <menu>
+            <item
+                android:id="@+id/nav_checkList"
+                android:icon="@drawable/ic_check_box_black_24dp"
+                android:title="CheckList" />
+            <item
+                android:id="@+id/nav_currency"
+                android:icon="@drawable/ic_monetization_on_black_24dp"
+                android:title="Currency Converter" />
+
+            <item
+                android:id="@+id/nav_notes"
+                android:icon="@drawable/ic_event_note_black_24dp"
+                android:title="Notes" />
+        </menu>
+    </item>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_developers"
+                android:icon="@drawable/ic_person_outline_black_24dp"
+                android:title="Developers" />
+        </menu>
+    </item>
+
+
+</menu>

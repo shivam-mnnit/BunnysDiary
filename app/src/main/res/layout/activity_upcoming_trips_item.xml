@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aman.agrawal.bunnysdiary.Trips.UpcomingTripsItem"
+    android:background="@drawable/back">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:scrollbars="none">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/tv_tripName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tripName"
+            android:layout_toStartOf="@+id/tv_tripName"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Destination" />
+
+        <TextView
+            android:id="@+id/tv_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_startDate"
+            android:layout_alignStart="@+id/tv_tripName"
+            android:layout_alignTop="@+id/tv1"
+            android:layout_marginStart="55dp"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv1"
+            android:layout_below="@+id/tv1"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Start Date" />
+
+        <TextView
+            android:id="@+id/tv_startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_destination"
+            android:layout_alignTop="@+id/tv2"
+            android:layout_margin="5dp"
+            android:textSize="17sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv1"
+            android:layout_below="@+id/tv2"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="No. Of Days" />
+
+        <TextView
+            android:id="@+id/tv_noOfDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_destination"
+            android:layout_alignTop="@+id/tv3"
+            android:layout_margin="5dp"
+            android:textSize="17sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv1"
+            android:layout_below="@+id/tv3"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Budget" />
+
+        <TextView
+            android:id="@+id/tv_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv4"
+            android:layout_alignStart="@+id/tv_destination"
+            android:layout_margin="5dp"
+            android:textSize="17sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv1"
+            android:layout_below="@+id/tv4"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Friends Coming" />
+
+        <TextView
+            android:id="@+id/tv_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv5"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+             />
+
+        <Button
+            android:id="@+id/btn_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_share"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btndesign"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Itinerary PDF" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_visitDestination"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btndesign"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Invite Friends" />
+
+        <Button
+            android:id="@+id/btn_visitDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/btndesign"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Show Destination" />
+
+    </RelativeLayout>
+
+    <!--</ScrollView>-->
+
+</LinearLayout>

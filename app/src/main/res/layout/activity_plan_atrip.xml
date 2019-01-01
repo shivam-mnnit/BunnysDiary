@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aman.agrawal.bunnysdiary.Trips.PlanATrip"
+    android:background="@drawable/back">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+
+
+        <EditText
+            android:id="@+id/et_tripName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Enter Some Trip Name" />
+
+        <EditText
+            android:id="@+id/et_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_tripName"
+            android:layout_below="@+id/et_tripName"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="What's Your Destination?" />
+
+        <EditText
+            android:id="@+id/et_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_destination"
+            android:layout_centerHorizontal="true"
+            android:layout_alignStart="@+id/et_tripName"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Budget?" />
+
+        <LinearLayout
+            android:id="@+id/lineralayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_tripName"
+            android:layout_alignEnd="@+id/et_tripName"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/et_budget">
+
+            <EditText
+                android:id="@+id/et_startDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="Trip Start Date?"
+                android:clickable="true"
+                android:focusable="false"
+                />
+
+            <EditText
+                android:id="@+id/et_noOfDays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="Number Of Days"
+                android:inputType="number"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_addFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_tripName"
+            android:layout_below="@+id/lineralayout"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Who else is Going?" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignEnd="@+id/et_tripName"
+            android:layout_alignTop="@+id/et_addFriends"
+            android:layout_alignBottom="@+id/et_addFriends"
+            android:layout_margin="5dp"
+            android:text="+"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="10sp"/>
+
+        <ListView
+            android:id="@+id/lv_listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_add"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_addItinerary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv_listView"
+            android:layout_alignStart="@+id/et_tripName"
+            android:layout_margin="15dp"
+            android:background="@drawable/btndesign"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:text="Attach Itinerary" />
+
+        <TextView
+            android:id="@+id/tv_pdfName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_tripName"
+            android:layout_below="@+id/btn_addItinerary"
+            android:layout_margin="5dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pdfName"
+            android:layout_alignStart="@+id/et_tripName"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/btndesign"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="Done" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
