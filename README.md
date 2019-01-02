@@ -6,7 +6,6 @@ A travel app that lets you search all the related information required for the c
 
 1. The user can create an account and login .The user can choose a profile picture and change password.
 
-!(screenshots of bunnys Diary/Screenshot_20190102-104759.png)
+<img src="https://github.com/shivam-mnnit/BunnysDiary/blob/master/screenshots%20of%20bunnys%20Diary/Screenshot_20190102-104759.png" width="250" height="400">
 
-
-
+ 
