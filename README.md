@@ -1,6 +1,5 @@
 ## BunnysDiary
-
-A travel app that lets you search all the related information required for the city to travel. It helps you in booking hotels,flights etc.
+travel app that lets you search all the related information required for the city to travel. It helps you in booking hotels,flights etc.
 
 # Features
 
@@ -28,7 +27,7 @@ A travel app that lets you search all the related information required for the c
 <img src="https://github.com/shivam-mnnit/BunnysDiary/blob/master/screenshots%20of%20bunnys%20Diary/Screenshot_20190102-104540.png" width="250" height="400">
 
 # Contributors
-1. Shivam Agrawal
+1. <a href="https://github.com/shivam-mnnit">Shivam Agrawal</a>
 2. Aman Kumar Agrawal
 3. Aayush Chauhan
 
