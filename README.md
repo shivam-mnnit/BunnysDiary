@@ -1,5 +1,5 @@
 ## BunnysDiary
-travel app that lets you search all the related information required for the city to travel. It helps you in booking hotels,flights etc.
+This Travel App lets you search all the related information required for the city to travel. It helps you in booking hotels,flights etc. It is a perfect guide to all your hassel free travel and vacations.
 
 # Features
 
